@@ -1,8 +1,8 @@
 do $$
 begin
-DROP DOMAIN domain_email;
-DROP DOMAIN ifscs;
-DROP DOMAIN pan_numbers;
+--DROP DOMAIN domain_email;
+--DROP DOMAIN ifscs;
+--DROP DOMAIN pan_numbers;
 
 CREATE DOMAIN domain_email AS TEXT CHECK (
   VALUE ~ '^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$'

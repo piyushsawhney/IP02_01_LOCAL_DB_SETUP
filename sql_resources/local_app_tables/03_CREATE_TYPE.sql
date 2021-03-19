@@ -1,9 +1,9 @@
 do $$
 begin
-Drop TYPE holding_nature;
-Drop TYPE po_transaction;
-Drop TYPE mf_transaction;
-Drop TYPE post_office_schemes;
+--Drop TYPE holding_nature;
+--Drop TYPE po_transaction;
+--Drop TYPE mf_transaction;
+--Drop TYPE post_office_schemes;
 
 create TYPE holding_nature as enum (
   'SI', 'ES', 'JT'
