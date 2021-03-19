@@ -19,4 +19,14 @@ CREATE DOMAIN cheque_numbers AS INTEGER CHECK (
 CREATE DOMAIN investor_name AS
    VARCHAR NOT NULL CHECK (VALUE !~ '\s');
 
+CREATE DOMAIN mobile_numbers AS
+   VARCHAR CHECK (char_length(VALUE) = 10);
+
+   VARCHAR CHECK (char_length(VALUE) = 6);
+CREATE DOMAIN pin_codes AS
+
+CREATE DOMAIN client_names AS
+   VARCHAR CHECK (VALUE NOT LIKE '%[^A-Z]%')
+
+
 end $$ language plpgsql;
