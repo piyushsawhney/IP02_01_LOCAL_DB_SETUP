@@ -22,8 +22,8 @@ CREATE DOMAIN investor_name AS
 CREATE DOMAIN mobile_numbers AS
    VARCHAR CHECK (char_length(VALUE) = 10);
 
-   VARCHAR CHECK (char_length(VALUE) = 6);
 CREATE DOMAIN pin_codes AS
+    VARCHAR CHECK (char_length(VALUE) = 6);
 
 CREATE DOMAIN client_names AS
    VARCHAR CHECK (VALUE NOT LIKE '%[^A-Z]%')
